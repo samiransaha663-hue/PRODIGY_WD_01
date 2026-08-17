@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northlane — One board, every project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">Northlane</a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#cta" class="nav__cta">Request access</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <p class="hero__eyebrow reveal">Project management, reduced</p>
+    <h1 class="hero__title reveal">
+      Fewer tools.<br>
+      <em>Clearer</em> work.
+    </h1>
+    <p class="hero__sub reveal">
+      Northlane replaces the spreadsheet, the status meeting, and the four
+      chat threads with one board your team actually opens.
+    </p>
+    <div class="hero__actions reveal">
+      <a href="#cta" class="btn btn--primary">Request access</a>
+      <a href="#how" class="btn btn--ghost">See how it works</a>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="section__head">
+      <p class="section__label reveal">What changes</p>
+      <h2 class="section__title reveal">Built around three things teams<br>actually struggle with</h2>
+    </div>
+
+    <div class="work__grid reveal-group">
+      <article class="work__card reveal">
+        <span class="work__mark">Visibility</span>
+        <h3>One board, not five</h3>
+        <p>Every project, owner, and deadline lives in a single view —
+          no toggling between docs to find the real status.</p>
+      </article>
+
+      <article class="work__card reveal">
+        <span class="work__mark">Ownership</span>
+        <h3>Work has one name on it</h3>
+        <p>Each task carries a single owner and a single due date,
+          so nothing quietly belongs to everyone and no one.</p>
+      </article>
+
+      <article class="work__card reveal">
+        <span class="work__mark">Signal</span>
+        <h3>Updates, not meetings</h3>
+        <p>Status changes post automatically to the board.
+          Most teams cancel their Monday check-in within a month.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="section__head">
+      <p class="section__label reveal">Getting started</p>
+      <h2 class="section__title reveal">Live in an afternoon</h2>
+    </div>
+
+    <ol class="how__list reveal-group">
+      <li class="how__step reveal">
+        <span class="how__index">01</span>
+        <div>
+          <h3>Import your work</h3>
+          <p>Pull tasks in from a spreadsheet, Trello, or Asana export —
+            or start from a blank board in under a minute.</p>
+        </div>
+      </li>
+      <li class="how__step reveal">
+        <span class="how__index">02</span>
+        <div>
+          <h3>Assign one owner per task</h3>
+          <p>Northlane won't let a task save without an owner and a date.
+            That constraint is the whole point.</p>
+        </div>
+      </li>
+      <li class="how__step reveal">
+        <span class="how__index">03</span>
+        <div>
+          <h3>Ship, and let status update itself</h3>
+          <p>Move a card, and everyone watching the board sees it —
+            no forwarding, no recap email.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="cta reveal" id="cta">
+    <h2>Request access for your team</h2>
+    <p>Northlane is currently onboarding teams of 5–40 people.</p>
+    <form class="cta__form" id="ctaForm">
+      <input type="email" placeholder="you@company.com" required aria-label="Work email">
+      <button type="submit" class="btn btn--primary">Request access</button>
+    </form>
+    <p class="cta__note" id="ctaNote"></p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="nav__logo">Northlane</span>
+    <p>&copy; 2026 Northlane. Built for teams who'd rather ship than report status.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
